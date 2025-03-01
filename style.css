@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', serif;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    padding: 20px; /* Fixed padding issue */
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.second-part{
+    padding-top: 10px;
+}
+
+p{
+    line-height: 24px;
+}
+
+/* Responsive */
+.works-on-smartphone {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.works-on-smartphone img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make body a flex container with column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    margin: 0;
+    width: 100vw;
+}
+
+/* Make main a flex container with row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Ensures main takes up remaining space */
+    margin: 0;
+    width: 100%;
+}
+
+
+article {
+    flex: 2; /* Takes 2 parts out of 3 */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    min-width: 0;
+    padding: 20;
+}
+
+aside {
+    flex: 1; /* Takes 1 part out of 3 */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    min-width: 0;
+    padding: 20;
+}
+
+
+/* Footer */
+footer{
+    background: black;
+    height: auto;
+    width: 100%;
+    font-family: 'Arima', serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer-content h2 {
+    font-size: 24;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.social-icons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.social-icons li{
+    margin: 0 20px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: red;
+}
+
+.footer-bottom{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* Homepage */
+
+.nav-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    padding-top: 20px;
+}
+
+.nav-item h2{
+    font-size: 24px;
+}
+
+.nav-item img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.description a{
+    color: black;
+    text-decoration: none;
+}
+
+/* About */
+
+.profile{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.portrait{
+    flex-basis: 35%;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.aboutme{
+    flex-basis: 60%;
+}
+
+.aboutme button{
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F7DCD7;
+}
+
+.skills{
+    background: #F7DCD7;
+    padding: 20px;
+}
+
+
+
+/* Timeline */
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 50px; 
+    padding-top: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 60;
+    align-items: start; 
+    width: calc(50% - 10px);
+}
+
+
+.timeline img{
+    height: 300px;
+    width: 40%;
+    object-fit: cover;
+    padding-left: 20px;
+}
+
+
+/* Tweets */
+.second-part h3{
+    font-size: 24px;
+}
+
+.hobbies{
+    background: #F7DCD7;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.video{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tweets{
+    background: #F7DCD7;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
